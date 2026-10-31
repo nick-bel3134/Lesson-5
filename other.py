@@ -23,7 +23,6 @@ nick = Human("Nick")
 kate = Human("Kate")
 car = Auto("Zaporozhets'")
 
-car.add_passenger(nick)
-car.add_passenger(kate)
+car.add_passenger(nick, kate)
 
 car.print_passengers_names()
