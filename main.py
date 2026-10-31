@@ -33,18 +33,11 @@ class Student:
             self.alive = False
 
     def end_of_day(self):
-        if self.progress > self.gladness:
-            print(f"Йой, задоволення лише {self.gladness}")
-            print(f"А прогресу то, аж {round(self.progress, 2)}")
-        elif self.progress < self.gladness:
-            print(f"Молодець, задоволення сягнуло {self.gladness}")
-            print(f"А от прогресу небагато, еге-ж {round(self.progress, 2)}")
-        else:
-            print(f"Твоє задоволення {self.gladness}")
-            print(f"Ну і твій прогрес {round(self.progress, 2)}")
+        print(f"Твоє задоволення {self.gladness}")
+        print(f"Ну і твій прогрес {round(self.progress, 2)}")
 
     def live(self, day):
-        day = "Day" + str(day) + "of" + self.name + "life"
+        day = "Day " + str(day) + " of " + self.name + " life"
         print(day)
 
         live_cube = random.randint(1, 3)
