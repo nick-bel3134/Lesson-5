@@ -41,8 +41,6 @@ class Student:
             print("По вас прийшли колектори!..")
             self.alive = False
 
-#Чи треба навч/працювати
-
     def status(self):
         if self.progress <= 0.01:
             self.to_study()
